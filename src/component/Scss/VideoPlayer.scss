@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+$color-bg: rgb(251, 247, 247);
+$color-font: rgb(7, 5, 5);
+$color-brand: rgb(95, 67, 48);
+$color-white: #fff;
+
+$padding-margin-ex-lg: 150px;
+$padding-margin-lg: 100px;
+$padding-margin-md: 70px;
+$padding-margin-sm: 50px;
+$padding-margin-ex-sm: 20px;
+
+$transition: all 0.3s ease-in-out;
+//query
+$large: 1100px;
+$ex-medium: 968px;
+$medium: 768px;
+$small: 550px;
+$ex-small: 450px;
+
+$heading: 70px;
+$heading-sm: 45px;
+$h1: 35px;
+$h2: 30px;
+$h3: 25px;
+$h4: 20px;
+$font-base: 16px;
+$font-base-lg: 18px;
+
+$heading-font: 'Playfair Display', serif;
+
+.videoPlayer-container{
+    .videoPlayer{
+        .img-container{
+            cursor: pointer;
+            background-image: url('https://cdn.pixabay.com/photo/2016/06/06/18/29/meat-skewer-1440105_960_720.jpg');
+            min-height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media screen and (max-width: $medium) {
+                min-height: 400px;
+            }
+            @media screen and (max-width: $small) {
+                min-height: 300px;
+            }
+            &:hover{
+                button{
+                    color: $color-bg;
+                    background: $color-brand;
+                }
+            }
+            button{
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $color-bg;
+                color: $color-brand;
+                font-size: $h2;
+                border: none;
+                border-radius: 50%;
+                transition: $transition;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.modal{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: $padding-margin-ex-sm;
+    text-align: right;
+
+    .modal-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.ytp-cued-thumbnail-overlay{
+    max-width: 200px;
+}

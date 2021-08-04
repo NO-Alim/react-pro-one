@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+$color-bg: rgb(251, 247, 247);
+$color-font: rgb(7, 5, 5);
+$color-brand: rgb(95, 67, 48);
+$color-white: #fff;
+
+$padding-margin-ex-lg: 150px;
+$padding-margin-lg: 100px;
+$padding-margin-md: 70px;
+$padding-margin-sm: 50px;
+$padding-margin-ex-sm: 20px;
+
+$transition: all 0.3s ease-in-out;
+//query
+$large: 1100px;
+$ex-medium: 968px;
+$medium: 768px;
+$small: 550px;
+$ex-small: 450px;
+
+$heading: 70px;
+$heading-sm: 45px;
+$h1: 35px;
+$h2: 30px;
+$h3: 25px;
+$h4: 20px;
+$font-base: 16px;
+$font-base-lg: 18px;
+
+$heading-font: 'Playfair Display', serif;
+
+.category-container{
+    padding: $padding-margin-lg $padding-margin-lg;
+
+    @media screen and (max-width: $ex-medium) {
+        padding: $padding-margin-sm $padding-margin-sm;
+    }
+    @media screen and (max-width: $small) {
+        padding: $padding-margin-ex-sm;
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+        @media screen and (max-width: $ex-medium) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media screen and (max-width: $medium) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media screen and (max-width: $small) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: $ex-small) {
+            grid-template-columns: 1fr;
+        }
+
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .img-container{
+                padding: 5px;
+                border: 1px solid $color-brand;
+                border-radius: 50%;
+                cursor: pointer;
+                @media screen and (max-width: $ex-small) {
+                    max-width: 200px;
+                }
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+            h4{
+                font-size: $h4;
+                font-family: $heading-font;
+                text-align: center;
+                color: $color-brand;
+                margin-top: $padding-margin-ex-sm;
+                cursor: pointer;
+                min-height: 50px;
+                @media screen and (max-width: $small) {
+                    font-size: $font-base-lg;
+                }
+            }
+        }
+    }
+}

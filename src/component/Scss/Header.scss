@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,200;1,300;1,400&display=swap');
+$color-bg: rgb(251, 247, 247);
+$color-font: rgb(7, 5, 5);
+$color-brand: rgb(95, 67, 48);
+$color-white: #fff;
+
+$padding-margin-ex-lg: 150px;
+$padding-margin-lg: 100px;
+$padding-margin-md: 70px;
+$padding-margin-sm: 50px;
+$padding-margin-ex-sm: 20px;
+
+$transition: all 0.3s ease-in-out;
+//query
+$large: 1100px;
+$ex-medium: 968px;
+$medium: 768px;
+$small: 550px;
+$ex-small: 450px;
+
+$heading: 70px;
+$heading-sm: 45px;
+$h1: 35px;
+$h2: 30px;
+$h3: 25px;
+$h4: 20px;
+$font-base: 16px;
+$font-base-lg: 18px;
+
+$heading-font: 'Playfair Display', serif;
+$link-font: 'Source Serif Pro', serif;
+
+.header{
+    .carousel-item{
+        min-height: 80vh;
+        max-height: 80vh;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+
+        .carousel-content{
+            margin: 0 auto;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: $padding-margin-ex-sm;
+            h1{
+                background: $color-bg;
+                margin-bottom: 10px;
+                padding: 5px 10px;
+                font-size: $heading-sm;
+                font-family: $heading-font;
+                font-weight: lighter;
+                color: $color-brand;
+                letter-spacing: 2px;
+                @media screen and (max-width: $medium) {
+                    font-size: $h1;
+                }
+                @media screen and (max-width: $small) {
+                    font-size: $h4;
+                    padding: 5px;
+                }
+            }
+
+            button{
+                width: 140px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: $font-base-lg;
+                background: $color-brand;
+                color: $color-bg;
+                border: none;
+                font-family: $link-font;
+                letter-spacing: 0.8px;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .item-one{
+        background-image: url('https://cdn.pixabay.com/photo/2017/02/05/21/06/burger-2041192_960_720.jpg');
+    }
+    .item-two{
+        background-image: url('https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg');
+    }
+}
+
+
+.arrow{
+    background-color: rgba($color-brand, $alpha: 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-bg;
+    border: none;
+    border-radius: 50%;
+    font-size: $h1;
+    transition: $transition;
+    &:hover{
+        background-color: $color-brand;
+    }
+}

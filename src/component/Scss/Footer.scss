@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+$color-bg: rgb(251, 247, 247);
+$color-font: rgb(7, 5, 5);
+$color-brand: rgb(95, 67, 48);
+$color-white: #fff;
+
+$padding-margin-ex-lg: 150px;
+$padding-margin-lg: 100px;
+$padding-margin-md: 70px;
+$padding-margin-sm: 50px;
+$padding-margin-ex-sm: 20px;
+
+$transition: all 0.3s ease-in-out;
+//query
+$large: 1100px;
+$ex-medium: 968px;
+$medium: 768px;
+$small: 550px;
+$ex-small: 450px;
+
+$heading: 70px;
+$heading-sm: 45px;
+$h1: 35px;
+$h2: 30px;
+$h3: 25px;
+$h4: 20px;
+$font-base: 16px;
+$font-base-lg: 18px;
+
+$logo-font: 'Lora', serif;
+$heading-font: 'Playfair Display', serif;
+
+.footer-container{
+    
+    padding: $padding-margin-md $padding-margin-lg;
+
+    @media screen and (max-width: $ex-medium) {
+        padding: $padding-margin-sm $padding-margin-sm;
+    }
+    @media screen and (max-width: $small) {
+        padding: $padding-margin-ex-sm;
+    }
+
+    .logo-container{
+        text-align: center;
+        .logo{
+            display: inline-block;
+            margin-bottom: 10px;
+            @media screen and (max-width: $small) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            a{
+                padding: 0;
+                margin: 0;
+                font-size: $heading-sm;
+                color: $color-brand;
+                text-transform: uppercase;
+                font-family: $logo-font;
+                display: flex;
+                align-items: flex-start;
+                
+                @media screen and (max-width: $small) {
+                    font-size: $h1;
+                }
+                span{
+                    margin-top: 10px;
+                    font-size: $h4;
+                    @media screen and (max-width: $small) {
+                        font-size: $font-base;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+    .social-container{
+        margin-top: $padding-margin-ex-sm;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            li{
+                margin: 0 10px;
+                a{
+                    font-size: $h4;
+                    transition: $transition;
+
+                    &:hover{
+                        color: $color-brand;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom-container{
+    background-color: $color-brand;
+    color: $color-bg;
+    text-align: center;
+    padding: 20px 0;
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
