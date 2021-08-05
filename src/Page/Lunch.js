@@ -56,6 +56,7 @@ const Lunch = () => {
                         </ul>
                     </div>
                     <div className="recipes item">
+                    <h4 className="main-title">favorite recipes</h4>
                         <div className="recipe">
                             <div className="img-container">
                                 <img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_960_720.jpg" alt="" />
@@ -76,6 +77,7 @@ const Lunch = () => {
                         </div>
                     </div>
                     <div className="categories item">
+                        <h4 className="main-title">Categories</h4>
                         <div className="category">
                             <div className="img-container">
                                 <img src="https://cdn.pixabay.com/photo/2017/03/23/19/57/asparagus-2169305_960_720.jpg" alt="" />

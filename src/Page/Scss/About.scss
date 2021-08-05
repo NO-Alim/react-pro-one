@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+$color-bg: rgb(251, 247, 247);
+$color-font: rgb(7, 5, 5);
+$color-brand: rgb(95, 67, 48);
+$color-white: #fff;
+
+$padding-margin-ex-lg: 150px;
+$padding-margin-lg: 100px;
+$padding-margin-md: 70px;
+$padding-margin-sm: 50px;
+$padding-margin-ex-sm: 20px;
+
+$transition: all 0.3s ease-in-out;
+//query
+$large: 1100px;
+$ex-medium: 968px;
+$medium: 768px;
+$small: 550px;
+$ex-small: 450px;
+
+$heading: 70px;
+$heading-sm: 45px;
+$h1: 35px;
+$h2: 30px;
+$h3: 25px;
+$h4: 20px;
+$font-base: 16px;
+$font-base-lg: 18px;
+
+$logo-font: 'Lora', serif;
+$heading-font: 'Playfair Display', serif;
+
+.about-container{
+    padding: $padding-margin-md $padding-margin-lg;
+    display: flex;
+    @media screen and (max-width: $ex-medium) {
+        padding: $padding-margin-sm $padding-margin-sm;
+    }
+    @media screen and (max-width: $small) {
+        padding: $padding-margin-ex-sm;
+    }
+
+    .about{
+        h2{
+            font-size: $h2;
+            font-family: $heading-font;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 20px;
+            color: $color-brand;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 24px;
+            margin: 20px 0;
+        }
+        .quot{
+            background-color: rgba($color-brand, $alpha: 0.5);
+            padding: 20px;
+            border-left: 5px solid $color-brand;
+        }
+    }
+}
