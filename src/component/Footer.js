@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="logo-container">
                     <div className="logo">
-                        <a href=""><span>LE</span>Bridge</a>
+                        <Link to="/"><span>LE</span>Bridge</Link>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur.</p>
                 </div>

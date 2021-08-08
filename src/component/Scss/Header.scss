@@ -32,6 +32,7 @@ $heading-font: 'Playfair Display', serif;
 $link-font: 'Source Serif Pro', serif;
 
 .header{
+    position: relative;
     .carousel-item{
         min-height: 80vh;
         max-height: 80vh;
@@ -41,7 +42,7 @@ $link-font: 'Source Serif Pro', serif;
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
-
+        position: relative;
         .carousel-content{
             margin: 0 auto;
             text-align: left;
@@ -49,6 +50,7 @@ $link-font: 'Source Serif Pro', serif;
             flex-direction: column;
             align-items: flex-start;
             padding: $padding-margin-ex-sm;
+            overflow: hidden;
             h1{
                 background: $color-bg;
                 margin-bottom: 10px;
@@ -93,20 +95,27 @@ $link-font: 'Source Serif Pro', serif;
     .item-two{
         background-image: url('https://cdn.pixabay.com/photo/2016/05/25/10/43/hamburger-1414422_960_720.jpg');
     }
+
+    .arrow{
+        background-color: rgba($color-brand, $alpha: 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-bg;
+        border: none;
+        border-radius: 50%;
+        font-size: $h1;
+        transition: $transition;
+        z-index: 0;
+        &:hover{
+            background-color: $color-brand;
+        }
+    }
 }
 
+//this is for arrow to hide when headroom trigger
 
-.arrow{
-    background-color: rgba($color-brand, $alpha: 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color-bg;
-    border: none;
-    border-radius: 50%;
-    font-size: $h1;
-    transition: $transition;
-    &:hover{
-        background-color: $color-brand;
-    }
+
+.carousel{
+    z-index: 0;
 }
