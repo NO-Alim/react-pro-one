@@ -9,11 +9,14 @@ import Home from './Page/Home'
 import Lunch from './Page/Lunch'
 import Pastry from './Page/Pastry'
 import Seafood from './Page/Seafood'
+import SingleBlog from './Page/SingleBlog'
+import ScrollToTop from './ScrollToTop'
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -32,6 +35,9 @@ function App() {
           </Route>
           <Route exact path="/seafood">
             <Seafood />
+          </Route>
+          <Route exact path="/single-blog">
+            <SingleBlog />
           </Route>
           <Route exact path="*">
             <Error />

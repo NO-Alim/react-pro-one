@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import {FaFacebookF,FaTwitter,FaPinterestP,FaSnapchatGhost} from 'react-icons/fa'
 import {FiMail} from 'react-icons/fi'
 import {RiArrowRightSLine} from 'react-icons/ri'
@@ -16,7 +16,7 @@ const Lunch = () => {
                         </div>
                         <h2>Apr Superfast Coconut Smoothie Easy To Made</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ducimus. Delectus neque consectetur animi laborum quidem nemo, dignissimos fuga suscipit consequuntur molestias! Doloribus nesciunt, possimus facilis id molestias cumque dicta atque quod consequatur corrupti autem, ab ratione debitis sunt sed...</p>
-                        <a href="#">Read more</a>
+                        <a href="./single-blog">Read more</a>
                     </div>
                     <div className="post">
                         <div className="img-container">
@@ -24,7 +24,7 @@ const Lunch = () => {
                         </div>
                         <h2>Apr Superfast Coconut Smoothie Easy To Made</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ducimus. Delectus neque consectetur animi laborum quidem nemo, dignissimos fuga suscipit consequuntur molestias! Doloribus nesciunt, possimus facilis id molestias cumque dicta atque quod consequatur corrupti autem, ab ratione debitis sunt sed...</p>
-                        <a href="#">Read more</a>
+                        <a href="./single-blog">Read more</a>
                     </div>
                     <div className="post">
                         <div className="img-container">
@@ -32,7 +32,7 @@ const Lunch = () => {
                         </div>
                         <h2>Apr Superfast Coconut Smoothie Easy To Made</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ducimus. Delectus neque consectetur animi laborum quidem nemo, dignissimos fuga suscipit consequuntur molestias! Doloribus nesciunt, possimus facilis id molestias cumque dicta atque quod consequatur corrupti autem, ab ratione debitis sunt sed...</p>
-                        <a href="#">Read more</a>
+                        <a href="./single-blog">Read more</a>
                     </div>
                 </div>
                 <div className="right-content">
